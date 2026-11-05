@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIXU CREATIONS — Digital Store Aesthetic RP/RL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+    :root {
+      --mauvelous: #EF8DB3;
+      --spun-sugar: #B3CEE2;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #FFF5F9;
+      color: #5A4E57;
+    }
+
+    .font-cute {
+      font-family: 'Fredoka', cursive;
+    }
+
+    .bg-mauvelous { background-color: var(--mauvelous); }
+    .text-mauvelous { color: var(--mauvelous); }
+    .border-mauvelous { border-color: var(--mauvelous); }
+
+    .bg-spun-sugar { background-color: var(--spun-sugar); }
+    .text-spun-sugar { color: var(--spun-sugar); }
+
+    .cute-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      border: 2px solid #F9D8E6;
+      border-radius: 24px;
+      box-shadow: 0 8px 20px rgba(239, 141, 179, 0.12);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .cute-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(239, 141, 179, 0.25);
+    }
+
+    .cute-btn {
+      background: linear-gradient(135deg, #EF8DB3 0%, #F6ACC7 100%);
+      color: white;
+      border-radius: 14px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(239, 141, 179, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .cute-btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(239, 141, 179, 0.45);
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .animate-marquee-custom {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 22s linear infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Running Text Marquee -->
+  <div class="bg-spun-sugar text-white py-1.5 px-4 text-xs font-semibold overflow-hidden border-b border-blue-200">
+    <div class="animate-marquee-custom space-x-12">
+      <span>✨ WELCOME TO LIXU CREATIONS ✨</span>
+      <span>🌸 DIGITAL STORE SERBA ADA UNTUK RP, RVN, VNC & REAL LIFE 🌸</span>
+      <span>🎀 HANYA MENYEDIAKAN JASA & PRODUK PROSEDURAL BERGARANSI 🎀</span>
+      <span>⚡ SERVIS FAST RESPOND VIA WHATSAPP 083182891637 ⚡</span>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-pink-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl">🎀</span>
+        <h1 class="font-cute text-2xl font-bold text-mauvelous tracking-wide">LIXU CREATIONS</h1>
+      </div>
+      <a href="https://wa.me/6283182891637" target="_blank" class="cute-btn px-4 py-2 text-xs md:text-sm flex items-center gap-2">
+        <i class="fab fa-whatsapp text-lg"></i> Hubungi Admin
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-4 py-8 md:py-12 text-center">
+    <div class="cute-card p-6 md:p-10 relative overflow-hidden bg-gradient-to-b from-white to-pink-50/50">
+      <span class="inline-block bg-pink-100 text-mauvelous font-cute text-xs px-4 py-1.5 rounded-full mb-3 border border-pink-200">
+        ✨ 100% Trusted Digital Store for RP, RVN, VNC & Real Life ✨
+      </span>
+      <h2 class="font-cute text-3xl md:text-5xl font-bold text-mauvelous mb-4 leading-tight">
+        Segala Kebutuhan Digitalmu Ada Di Sini 🎀🌸
+      </h2>
+      <p class="text-xs md:text-sm text-gray-600 max-w-2xl mx-auto mb-6 leading-relaxed">
+        Menyediakan Aplikasi Premium, Jasa Editing Aesthetic, Music Production, Top Up Game, Suntik Sosmed, dan Jasa Digital Lainnya. Murah, Amanah, dan Bergaransi!
+      </p>
+      <div class="flex justify-center gap-3">
+        <a href="#catalog" class="cute-btn px-6 py-3 text-xs md:text-sm font-cute">Lihat Katalog 🛍️</a>
+        <a href="#testi" class="bg-spun-sugar text-white rounded-xl px-5 py-3 text-xs md:text-sm font-cute hover:opacity-90 transition">Testimoni ⭐️</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Section -->
+  <section id="catalog" class="max-w-6xl mx-auto px-4 py-6">
+    <div class="text-center mb-6">
+      <h3 class="font-cute text-2xl md:text-3xl font-bold text-mauvelous">🛍️ Katalog Produk & Jasa</h3>
+      <p class="text-xs text-gray-500 mt-1">Pilih kategori di bawah untuk menyaring produk</p>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="flex flex-wrap justify-center gap-2 mb-8">
+      <button onclick="filterCategory('all')" class="cat-btn cute-btn px-4 py-2 text-xs font-cute">Semua</button>
+      <button onclick="filterCategory('app')" class="cat-btn bg-white border border-pink-200 text-gray-600 hover:bg-pink-50 px-4 py-2 text-xs font-cute rounded-xl">Aplikasi Premium</button>
+      <button onclick="filterCategory('edit')" class="cat-btn bg-white border border-pink-200 text-gray-600 hover:bg-pink-50 px-4 py-2 text-xs font-cute rounded-xl">Jasa Editing</button>
+      <button onclick="filterCategory('music')" class="cat-btn bg-white border border-pink-200 text-gray-600 hover:bg-pink-50 px-4 py-2 text-xs font-cute rounded-xl">Music Production</button>
+      <button onclick="filterCategory('game')" class="cat-btn bg-white border border-pink-200 text-gray-600 hover:bg-pink-50 px-4 py-2 text-xs font-cute rounded-xl">Top Up Game</button>
+      <button onclick="filterCategory('sosmed')" class="cat-btn bg-white border border-pink-200 text-gray-600 hover:bg-pink-50 px-4 py-2 text-xs font-cute rounded-xl">Suntik Sosmed</button>
+      <button onclick="filterCategory('lainnya')" class="cat-btn bg-white border border-pink-200 text-gray-600 hover:bg-pink-50 px-4 py-2 text-xs font-cute rounded-xl">Jasa Lainnya</button>
+    </div>
+
+    <!-- Grid Produk Container -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Produk Bawaan akan dirender via JavaScript di sini -->
+    </div>
+  </section>
+
+  <!-- Update Promo Section -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <div class="cute-card p-6 bg-gradient-to-r from-pink-100 to-blue-100 border-2 border-pink-300">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div>
+          <span class="bg-red-400 text-white font-cute text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider">🔥 PROMO SPECIAL</span>
+          <h4 class="font-cute text-xl font-bold text-mauvelous mt-2">Diskon Bundle RP & RVN Starter Kit!</h4>
+          <p class="text-xs text-gray-600 mt-1">Dapatkan Canva Pro + Edit Video Intro RP + Suntik 1000 Followers Sosmed hanya dengan Rp 25.000!</p>
+        </div>
+        <a href="https://wa.me/6283182891637?text=Halo%20Admin,%20saya%20mau%20klaim%20Promo%20Bundle%20RP%20Starter%20Kit!" target="_blank" class="cute-btn px-6 py-2.5 text-xs font-cute whitespace-nowrap">Klaim Promo 🎁</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cara Order Section -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <h3 class="font-cute text-2xl font-bold text-center text-mauvelous mb-6">📌 Cara Order Mudah</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="cute-card p-4 text-center">
+        <div class="w-10 h-10 bg-pink-100 text-mauvelous font-cute font-bold rounded-full flex items-center justify-center mx-auto mb-2 text-lg">1</div>
+        <h5 class="font-cute font-bold text-sm">Pilih Produk</h5>
+        <p class="text-xs text-gray-500 mt-1">Pilih kategori dan layanan digital yang kamu butuhkan.</p>
+      </div>
+      <div class="cute-card p-4 text-center">
+        <div class="w-10 h-10 bg-pink-100 text-mauvelous font-cute font-bold rounded-full flex items-center justify-center mx-auto mb-2 text-lg">2</div>
+        <h5 class="font-cute font-bold text-sm">Isi Form Order</h5>
+        <p class="text-xs text-gray-500 mt-1">Klik "Order Sekarang" dan lengkapi detail namamu.</p>
+      </div>
+      <div class="cute-card p-4 text-center">
+        <div class="w-10 h-10 bg-pink-100 text-mauvelous font-cute font-bold rounded-full flex items-center justify-center mx-auto mb-2 text-lg">3</div>
+        <h5 class="font-cute font-bold text-sm">Kirim ke WhatsApp</h5>
+        <p class="text-xs text-gray-500 mt-1">Sistem otomatis mengarahkan ke chat WhatsApp Admin.</p>
+      </div>
+      <div class="cute-card p-4 text-center">
+        <div class="w-10 h-10 bg-pink-100 text-mauvelous font-cute font-bold rounded-full flex items-center justify-center mx-auto mb-2 text-lg">4</div>
+        <h5 class="font-cute font-bold text-sm">Bayar & Diproses</h5>
+        <p class="text-xs text-gray-500 mt-1">Kirim bukti bayar dan produk langsung disiapkan!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni Section -->
+  <section id="testi" class="max-w-6xl mx-auto px-4 py-8">
+    <h3 class="font-cute text-2xl font-bold text-center text-mauvelous mb-6">💖 1000+ Testimonial Trust</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="cute-card p-4 text-xs">
+        <div class="text-yellow-400 mb-1">⭐⭐⭐⭐⭐</div>
+        <p class="italic text-gray-600">"Pesan edit video RP di sini gila lucu banget aesthetic parah!! Pengerjaan cuma 10 menit. Makasih Lixu Creations!"</p>
+        <span class="block font-bold text-mauvelous mt-2 text-[11px]">— @chaerin_rp (Anak RP)</span>
+      </div>
+      <div class="cute-card p-4 text-xs">
+        <div class="text-yellow-400 mb-1">⭐⭐⭐⭐⭐</div>
+        <p class="italic text-gray-600">"Langganan Canva Pro & Netflix di sini ga pernah error. Garansi terjamin pol 🫶🏻"</p>
+        <span class="block font-bold text-mauvelous mt-2 text-[11px]">— Kak Nala (Real Life)</span>
+      </div>
+      <div class="cute-card p-4 text-xs">
+        <div class="text-yellow-400 mb-1">⭐⭐⭐⭐⭐</div>
+        <p class="italic text-gray-600">"Suntik sosmed buat agency RVN masuknya cpet bangett, adminnya ramah pol dan murmer!"</p>
+        <span class="block font-bold text-mauvelous mt-2 text-[11px]">— User VNC Agency</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Ambassador Section -->
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <h3 class="font-cute text-2xl font-bold text-center text-mauvelous mb-6">🌸 Brand Ambassadors</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="cute-card p-4 text-center">
+        <!-- GANTI FOTO BA 1 DI SINI -->
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-mauvelous shadow-sm" alt="BA 1">
+        <h4 class="font-cute font-bold text-mauvelous">Jennie R.</h4>
+        <p class="text-xs text-gray-500">RP & Visual Icon</p>
+      </div>
+      <div class="cute-card p-4 text-center">
+        <!-- GANTI FOTO BA 2 DI SINI -->
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-mauvelous shadow-sm" alt="BA 2">
+        <h4 class="font-cute font-bold text-mauvelous">Wonyoung K.</h4>
+        <p class="text-xs text-gray-500">Aesthetic Muse</p>
+      </div>
+      <div class="cute-card p-4 text-center">
+        <!-- GANTI FOTO BA 3 DI SINI -->
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-mauvelous shadow-sm" alt="BA 3">
+        <h4 class="font-cute font-bold text-mauvelous">Chaewon M.</h4>
+        <p class="text-xs text-gray-500">VNC & RVN Ambassador</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Modal -->
+  <div id="order-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative border-2 border-pink-200">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 font-bold">✕</button>
+      <h3 class="font-cute text-xl font-bold text-mauvelous mb-1">Form Pemesanan ✨</h3>
+      <p id="modal-product-title" class="text-xs font-semibold text-gray-700 mb-4 bg-pink-50 p-2 rounded-lg"></p>
+      
+      <form onsubmit="sendToWA(event)" class="space-y-3 text-xs">
+        <div>
+          <label class="block font-semibold mb-1">Nama / Username (RP/RL):</label>
+          <input type="text" id="cust-name" required placeholder="misal: Jennie / @chaerin" class="w-full p-2.5 border rounded-xl focus:outline-none focus:border-pink-400">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Nomor WhatsApp Kamu:</label>
+          <input type="tel" id="cust-wa" required placeholder="08xxxxxxxxxx" class="w-full p-2.5 border rounded-xl focus:outline-none focus:border-pink-400">
+        </div>
+        <div>
+          <label class="block font-semibold mb-1">Pilihan Durasi / Paket / Catatan:</label>
+          <textarea id="cust-note" placeholder="Tuliskan durasi (misal: 1 Bulan, 1000 Followers, dll)" class="w-full p-2.5 border rounded-xl focus:outline-none focus:border-pink-400 h-20"></textarea>
+        </div>
+        <div class="bg-pink-50 p-3 rounded-xl text-[11px] text-gray-600">
+          💡 Kamu akan otomatis diarahkan ke chat WhatsApp Admin (<b>083182891637</b>) untuk melakukan konfirmasi & pembayaran.
+        </div>
+        <button type="submit" class="cute-btn w-full py-3 font-cute text-sm">Lanjutkan Pembayaran via WA 🚀</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Panel Modal -->
+  <div id="admin-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative border-2 border-blue-200 max-h-[90vh] overflow-y-auto">
+      <button onclick="closeAdminModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 font-bold">✕</button>
+      <h3 class="font-cute text-xl font-bold text-mauvelous mb-4">⚙️ Admin Panel (Tambah & Hapus Produk)</h3>
+
+      <!-- Form Tambah Produk -->
+      <form onsubmit="addNewProduct(event)" class="space-y-3 text-xs mb-6 border-b pb-4">
+        <h4 class="font-bold text-gray-700">Tambah Produk Baru:</h4>
+        <div>
+          <label class="block mb-1 font-semibold">Kategori:</label>
+          <select id="adm-cat" class="w-full p-2 border rounded-lg">
+            <option value="app">Aplikasi Premium</option>
+            <option value="edit">Jasa Editing</option>
+            <option value="music">Music Production</option>
+            <option value="game">Top Up Game</option>
+            <option value="sosmed">Suntik Sosmed</option>
+            <option value="lainnya">Jasa Lainnya</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Nama Produk:</label>
+          <input type="text" id="adm-title" required class="w-full p-2 border rounded-lg" placeholder="misal: CapCut Pro 1 Bulan">
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Deskripsi Singkat:</label>
+          <input type="text" id="adm-desc" required class="w-full p-2 border rounded-lg" placeholder="misal: Fitur pro unlock full garansi">
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">Harga (Rp):</label>
+          <input type="text" id="adm-price" required class="w-full p-2 border rounded-lg" placeholder="misal: 15.000">
+        </div>
+        <div>
+          <label class="block mb-1 font-semibold">URL Foto Produk:</label>
+          <input type="url" id="adm-img" required class="w-full p-2 border rounded-lg" placeholder="https://images.unsplash.com/...">
+        </div>
+        <button type="submit" class="w-full py-2 bg-pink-400 text-white rounded-lg font-cute hover:bg-pink-500">Tambah Produk ✨</button>
+      </form>
+
+      <!-- Daftar Produk Saat Ini -->
+      <div>
+        <h4 class="font-bold text-gray-700 mb-2 text-xs">Daftar Produk Sekarang:</h4>
+        <div id="admin-product-list" class="space-y-2 text-xs">
+          <!-- List produk di-render JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-white py-6 border-t border-pink-100 text-center text-xs text-gray-400">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+      <p>© LIXU CREATIONS — Digital Store Aesthetic. WhatsApp: 083182891637</p>
+      <button onclick="openAdminPrompt()" class="text-pink-300 hover:text-mauvelous text-[11px] underline">⚙️ Admin Panel</button>
+    </div>
+  </footer>
+
+  <script>
+    // Data produk default bawaan
+    const defaultProducts = [
+      { id: 1, cat: 'app', title: 'Canva Pro (Member/Head)', desc: 'Unlock semua elemen & template premium tanpa batas.', price: '5.000', img: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400' },
+      { id: 2, cat: 'app', title: 'CapCut Pro iOS / Android', desc: 'Akses efek pro & eksport tanpa watermark.', price: '8.000', img: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400' },
+      { id: 3, cat: 'edit', title: 'Jasa Edit Video RP Aesthetic', desc: 'Video singkat, manips, cc, lyric video gaya soft kpop.', price: '10.000', img: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=400' },
+      { id: 4, cat: 'music', title: 'Music Production / Audio Mix', desc: 'Bikin remix audio RP, sound intro, & mixing suara.', price: '20.000', img: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400' },
+      { id: 5, cat: 'game', title: 'Top Up Game (MLBB/FF/PUBG)', desc: 'Proses kilat via ID tanpa login.', price: '10.000', img: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400' },
+      { id: 6, cat: 'sosmed', title: 'Suntik Followers Instagram / TT', desc: 'Server aman, pas buat kebutuhan RVN & Agency RP.', price: '5.000', img: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400' }
+    ];
+
+    // Ambil data dari LocalStorage atau pakai default
+    let products = JSON.parse(localStorage.getItem('lixu_products')) || defaultProducts;
+    let selectedProduct = '';
+
+    function renderProducts(catFilter = 'all') {
+      const container = document.getElementById('product-grid');
+      container.innerHTML = '';
+
+      const filtered = catFilter === 'all' ? products : products.filter(p => p.cat === catFilter);
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<p class="col-span-full text-center text-xs text-gray-400 py-8">Belum ada produk untuk kategori ini ~</p>`;
+        return;
+      }
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'cute-card p-4 flex flex-col justify-between';
+        card.innerHTML = `
+          <div>
+            <img src="${p.img}" alt="${p.title}" class="w-full h-36 object-cover rounded-xl mb-3">
+            <span class="text-[10px] bg-pink-100 text-mauvelous px-2 py-0.5 rounded-md font-semibold">${getCatName(p.cat)}</span>
+            <h4 class="font-cute text-base font-bold mt-1">${p.title}</h4>
+            <p class="text-xs text-gray-500 mt-1">${p.desc}</p>
+          </div>
+          <div>
+            <div class="text-mauvelous font-bold text-sm mt-3">Mulai Rp ${p.price}</div>
+            <button onclick="openModal('${p.title}', '${p.price}')" class="cute-btn w-full py-2 text-xs mt-3">Order Sekarang ✨</button>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function getCatName(cat) {
+      const names = {
+        app: 'Aplikasi Premium',
+        edit: 'Jasa Editing',
+        music: 'Music Production',
+        game: 'Top Up Game',
+        sosmed: 'Suntik Sosmed',
+        lainnya: 'Jasa Lainnya'
+      };
+      return names[cat] || 'Layanan Digital';
+    }
+
+    function filterCategory(cat) {
+      renderProducts(cat);
+    }
+
+    function openModal(name, price) {
+      selectedProduct = name;
+      document.getElementById('modal-product-title').innerText = `Produk: ${name} (Harga: Rp ${price})`;
+      document.getElementById('order-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('order-modal').classList.add('hidden');
+    }
+
+    function sendToWA(e) {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const wa = document.getElementById('cust-wa').value;
+      const note = document.getElementById('cust-note').value;
+      
+      const text = `Halo Admin LIXU CREATIONS! ✨%0A%0ASaya mau pesan produk:%0A- *Produk*: ${selectedProduct}%0A- *Nama / Username*: ${name}%0A- *No. WA*: ${wa}%0A- *Catatan / Paket*: ${note}%0A%0AMohon diproses ya admin, terima kasih! 🎀`;
+      window.open(`https://wa.me/6283182891637?text=${text}`, '_blank');
+      closeModal();
+    }
+
+    // Panel Admin Functions
+    function openAdminPrompt() {
+      const pass = prompt("Masukkan Kata Sandi Admin (Default: lixu123):");
+      if (pass === 'lixu123') {
+        renderAdminList();
+        document.getElementById('admin-modal').classList.remove('hidden');
+      } else if (pass !== null) {
+        alert("Password salah!");
+      }
+    }
+
+    function closeAdminModal() {
+      document.getElementById('admin-modal').classList.add('hidden');
+    }
+
+    function renderAdminList() {
+      const list = document.getElementById('admin-product-list');
+      list.innerHTML = '';
+      products.forEach((p, idx) => {
+        const item = document.createElement('div');
+        item.className = 'flex justify-between items-center bg-gray-50 p-2 rounded-lg border';
+        item.innerHTML = `
+          <div>
+            <div class="font-bold text-gray-700">${p.title}</div>
+            <div class="text-[10px] text-gray-400">Rp ${p.price} | Kategori: ${p.cat}</div>
+          </div>
+          <button onclick="deleteProduct(${idx})" class="text-red-500 hover:text-red-700 text-xs font-bold px-2 py-1">Hapus 🗑️</button>
+        `;
+        list.appendChild(item);
+      });
+    }
+
+    function addNewProduct(e) {
+      e.preventDefault();
+      const cat = document.getElementById('adm-cat').value;
+      const title = document.getElementById('adm-title').value;
+      const desc = document.getElementById('adm-desc').value;
+      const price = document.getElementById('adm-price').value;
+      const img = document.getElementById('adm-img').value;
+
+      const newProd = { id: Date.now(), cat, title, desc, price, img };
+      products.push(newProd);
+      localStorage.setItem('lixu_products', JSON.stringify(products));
+
+      renderProducts();
+      renderAdminList();
+
+      document.getElementById('adm-title').value = '';
+      document.getElementById('adm-desc').value = '';
+      document.getElementById('adm-price').value = '';
+      document.getElementById('adm-img').value = '';
+
+      alert("Produk berhasil ditambahkan!");
+    }
+
+    function deleteProduct(idx) {
+      if (confirm("Yakin mau menghapus produk ini?")) {
+        products.splice(idx, 1);
+        localStorage.setItem('lixu_products', JSON.stringify(products));
+        renderProducts();
+        renderAdminList();
+      }
+    }
+
+    // Inisialisasi awal
+    renderProducts();
+  </script>
+</body>
+</html>
